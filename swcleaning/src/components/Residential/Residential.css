@@ -1,0 +1,11 @@
+.residential-page {
+    margin-top: 10vh;
+    height: calc(100vh - 10vh);
+    width: 100vw;
+    background-color: red;
+}
+
+.residential-header {
+    margin-top: 10vh;
+   
+}

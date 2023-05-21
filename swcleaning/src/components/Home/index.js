@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <>
             <div class="cleaining-lady-container">
-                <img src="cleaningSupplies.png" alt="" className='cleaningLady'/>
+                <img src="cleaningSupplies.png" alt="" className='cleaningSupplies'/>
                 <div className="superior-cleaning">
                     <span className='superior-cleaning-text'>
                     Your Cleaning <span class="underLine">Solution</span> for Home and Business 
