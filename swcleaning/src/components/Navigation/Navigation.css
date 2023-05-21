@@ -1,0 +1,8 @@
+.nav-bar{
+    background-color: red;
+    top: 0;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
