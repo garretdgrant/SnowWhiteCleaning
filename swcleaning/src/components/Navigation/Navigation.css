@@ -1,8 +1,22 @@
-.nav-bar{
-    background-color: red;
-    top: 0;
+.nav-bar-logo {
     position: relative;
+    height: 30vh;
+    z-index: 10;
+    margin-top: 80px;
+    cursor: pointer;
+    z-index: 10;
+}
+.nav-bar{
+    background-color: #ffd031;
+    top: 0;
+    position: fixed;
     width: 100vw;
     display: flex;
+    align-items: center;
+    height: 9vh;
     justify-content: space-between;
+}
+
+.nav-right-side{
+    margin-right: 3em;
 }

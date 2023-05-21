@@ -1,19 +1,29 @@
 import './Navigation.css'
+import {useNavigate} from 'react-router-dom'
 
 const Navigation = () => {
+    const navigate = useNavigate();
+    const logoClick = (e) => {
+        navigate('/logoClick');
+    }
+    
     return (
         <>
-            <div class="nav-bar">
+            <div className="nav-bar">
                 
-                <div class="nav-left-side">
-                    Hamburger Menu
+        
+                
+                <div className="nav-left-side">
+                <img src="swLogo.png" alt="" className="nav-bar-logo" 
+                    onClick={logoClick}/>
+                   
                 </div>
                 
-                <div class="nav-center">
+                <div className="nav-center">
                     Snow White Cleaning
                 </div>
                 
-                <div class="nav-right-side">
+                <div className="nav-right-side">
                     Contact
                 </div>
             </div>
