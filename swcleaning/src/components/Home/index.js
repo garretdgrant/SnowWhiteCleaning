@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom';
 import './Home.css'
 
 const Home = () => {
+    const navigate = useNavigate();
     return (
         <>
             <div class="cleaining-lady-container">
@@ -10,8 +12,11 @@ const Home = () => {
                     Your Cleaning <span class="underLine">Solution</span> for Home and Business 
                     in El Dorado County
                     </span>
-                </div>
 
+                    <span class="free-estimate-text" onClick={()=>navigate('/contact')}>
+                        Get a free estimate today!
+                    </span>
+                </div>
             </div>
         </>
     )

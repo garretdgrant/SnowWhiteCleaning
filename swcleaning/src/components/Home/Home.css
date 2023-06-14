@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Sofia);
 
 .cleaning-lady-container {
     background-color: blue;
@@ -6,8 +5,9 @@
 }
 
 .cleaningSupplies {
-    margin-top: 9vh;
+    margin-top: 10vh;
     max-width: 100vw;
+    max-height: 85vh;
     width: 100%;
     position: absolute;
     filter: brightness(50%);
@@ -15,17 +15,46 @@
 }
 
 .superior-cleaning {
-    color: red;
+
     position: absolute;
-    top: 100px;
-    right: 20px;
-    width: 40%;
+    top: 150px;
+    width: 100%;
+    height: 80vh;
     font-size: 60px;
     z-index: -1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
-.superior-cleaning-text {
-    font-family: "Sofia", cursive;
+.superior-cleaning-text,
+.free-estimate-text {
+    width: 600px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+}
+
+.superior-cleaning-text{
+    margin-bottom: 50px;
+}
+
+.free-estimate-text {
+    width: 850px;
+    border: solid #ffd031;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.free-estimate-text:hover{
+    background-color: #ffd031;
+    border: solid white;
+    color: white;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 8px 8px 10px rgb(49, 49, 49), 0 0 2px #094cbe;
+    scale: 1.1;
 }
 

@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation";
 import Home from './components/Home';
 import Residential from './components/Residential';
 import ContactForm from './components/ContactForm';
+import DesignerCredits from './components/DesignerCredits';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route exact path='/contact' element={<ContactForm/>}></Route>
           <Route exact path='/' element={<Home/>}></Route>
         </Routes>
+        <DesignerCredits />
       </>
     </Router>
   );

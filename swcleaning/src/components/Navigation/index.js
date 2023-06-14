@@ -4,10 +4,6 @@ import {useNavigate} from 'react-router-dom'
 const Navigation = () => {
     const navigate = useNavigate();
 
-    const linkClick = (page) => {
-        navigate(page)
-    }
-
     return (
         <>
             <div className="nav-bar">
@@ -19,6 +15,7 @@ const Navigation = () => {
                 <div className="nav-right-side">
                     <div class="nav-information">
                         <span>Serving El Dorado County</span>
+                        <span>tammy@snowwhitecleaning.org</span>
                         <span>(530) 407-1119</span>
                     </div>
                     <div class="nav-page-links">
@@ -30,8 +27,8 @@ const Navigation = () => {
                             Service Areas</span>
                         <span onClick={e => navigate("/about")}>
                             About Us</span>
-                        <span onClick={e => navigate("/contact")}>
-                            Contact us</span>
+                        <span className='nav-estimate' onClick={e => navigate("/contact")}>
+                            Request an Estimate</span>
                     </div>
                 </div>
 
